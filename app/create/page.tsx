@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { saveTripBrief } from "../lib/trip-brief";
 
 type Step = {
   eyebrow: string;
@@ -54,6 +55,15 @@ export default function CreateTrip() {
   const submitFree = () => {
     if (!freeText.trim()) return;
     pick(freeText.trim());
+  };
+
+  const startPlanning = () => {
+    saveTripBrief({
+      destination: answers[0] ?? "",
+      duration: answers[1] ?? "",
+      budget: answers[2] ?? "",
+      mood: answers[3] ?? "",
+    });
   };
 
   return (
@@ -139,9 +149,13 @@ export default function CreateTrip() {
               >
                 修改 Edit
               </button>
-              <button className="border border-foreground/80 px-8 py-3 text-[0.75rem] tracking-[0.12em] transition-colors hover:bg-foreground hover:text-background">
+              <Link
+                href="/plans"
+                onClick={startPlanning}
+                className="border border-foreground/80 px-8 py-3 text-[0.75rem] tracking-[0.12em] transition-colors hover:bg-foreground hover:text-background"
+              >
                 开始规划 Start Planning →
-              </button>
+              </Link>
             </div>
           </div>
         )}
