@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WANDER · AI Travel Agent
 
-## Getting Started
+> An AI Travel Agent that remembers your journeys, accompanies you throughout the trip,
+> and co-creates meaningful travel works from your real experiences.
+>
+> 一个会记住你的旅行、陪你完成旅行，并和你一起把真实旅行经历创作成旅行作品的 AI Travel Agent。
 
-First, run the development server:
+核心产品循环：**Travel -> Memory -> Creation -> Feedback -> Next Travel**
+
+## 当前状态
+
+个人练手项目（Vibe Coding），MVP 开发中。
+
+- [x] FR-01 Home — 文学旅行杂志风首页
+- [ ] FR-02 Create Trip — 对话式创建旅行
+- [ ] FR-04 Trip Brief / FR-05 AI Travel Plan — AI 多方案规划
+- [ ] FR-06~08 Trip Space / Plan vs Actual / Travel Alerts
+- [ ] FR-11~13 Photo Organization / Story Clues / Travel Work
+- [ ] FR-15 Travel Memory
+
+## 技术栈
+
+- Next.js (App Router) + TypeScript
+- Tailwind CSS
+- 规划中：Supabase（PostgreSQL + Auth）、对象存储、统一 AI Provider Layer
+
+## 本地运行
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+打开 http://localhost:3000 查看。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 产品文档
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+完整 PRD V1.1 为产品设计依据（见根目录配套文档）。
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with Cursor · Vibe Coding
