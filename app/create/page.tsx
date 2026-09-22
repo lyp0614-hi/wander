@@ -27,7 +27,7 @@ const STEPS: Step[] = [
     eyebrow: "BUDGET",
     question: "大概预算是多少？",
     hint: "What's your budget?",
-    chips: ["3000 以内", "5000 左右", "8000 以上", "还没想好"],
+    chips: ["1000 以内", "1000–2000", "2000–3000", "3000–5000", "5000–8000", "8000 以上", "还没想好"],
   },
   {
     eyebrow: "MOOD",
