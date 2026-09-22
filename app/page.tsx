@@ -44,7 +44,7 @@ export default function Home() {
             还没有想好下一站？告诉我你的时间、预算和想要的感觉。
           </p>
           <Link
-            href="#start"
+            href="/create"
             className="mt-10 inline-flex max-w-full items-center justify-center border border-foreground/80 px-5 py-3 text-center text-[0.75rem] tracking-[0.08em] text-foreground transition-colors hover:bg-foreground hover:text-background sm:px-9 sm:text-[0.85rem] sm:tracking-[0.12em]"
           >
             ＋ 开始一次旅行 ＋ Start a Journey
